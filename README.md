@@ -5,7 +5,13 @@ Python教學
     *   [簡易安裝](#easy)
     *   [一般安裝](#normal)
     *   [開發平台安裝](#IDE)
-*  
+    *   [其他編輯器](#NB)
+*   [套件管理工具](#Package)
+    *   [The Python Package Installer](#PIP)
+    *   [使用方式](#install)
+*   [虛擬環境](#Virtualenv)
+
+ 
 *   [感謝](#acknowledgement)
 
 
@@ -17,18 +23,79 @@ Python教學
 
 * 安裝Anaconda https://www.anaconda.com/distribution/ 
 
+    Windows預設安裝路徑在：
+
+      C:\Users\[user]\anacondaX\
+
+    Mac預設安裝路徑在：
+
 <h3 id="normal">一般安裝</h3>
 
 * 下載Python直譯器 https://www.python.org/downloads/ 
+
+    Windows預設安裝路徑在：
+  
+      C:\Users\[user]\AppData\Local\Programs\Python\PythonX.Y\
+   
+    Mac預設安裝路徑在：
 
 <h3 id="IDE">開發平台安裝</h3>
 
 * PyCharm https://www.jetbrains.com/pycharm/
 * Visual Studio Code (VSCode) https://code.visualstudio.com/ 
+* Spyder <font color="steelblue">Anaconda安裝好就有</font>
+
+<h3 id="NB">其他編輯器</h3>
+
+* Jupter Notebook <font color="steelblue">Anaconda安裝好就有</font>
+* Google Colaboratory https://colab.research.google.com/ 
+
+<h2 id="Package">套件管理工具</h2>
+
+<h3 id="PIP">The Python Package Installer：pip</h3>
+
+Python安裝完成後，Python 2在2.7.9含以上或Python 3在3.4含以上，預設已經安裝了pip
+
+Windows預設pip路徑在：
+
+    Anaconda安裝
+    C:\Users\[user]\anaconda[版本]\Scripts
+
+    一般安裝
+    C:\Users\[user]\AppData\Local\Programs\Python\PythonX.Y\Scripts
+
+Mac預設pip路徑在：
+
+<h3 id="install">套件安裝方式</h3>
+
+    $ pip install 套件名稱
+
+Windows預設套件安裝在：
+
+    Anaconda安裝
+    C:\Users\[user]\anaconda[版本]\pkgs
+
+    一般安裝
+    C:\Users\[user]\AppData\Local\Programs\Python\PythonX.Y\Lib\site-packages
+
+Mac預設套件安裝在：
+
+列出所有已經安裝的套件
+    
+    pip list 
+
+套件相關資訊與安裝路徑
+    
+    pip show 套件名稱
+
+<h2 id="Virtualenv">虛擬環境</h2>
 
 
 
 
+
+
+---
 包括 [Setext] [1]、[atx] [2]、[Textile] [3]、[reStructuredText] [4]、[Grutatext] [5] 和 [EtText] [6]，然而最大靈感來源其實是純文字的電子郵件格式。
 
   [1]: http://docutils.sourceforge.net/mirror/setext.html
