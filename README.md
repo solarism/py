@@ -1,6 +1,6 @@
+> [name=Weichen]
 **Python開發環境**
-
-#### tags: `Python`
+###### tags: `Python`
 
 [TOC]
 
@@ -77,13 +77,24 @@
 
       $ python --version
       Python 3.8.3
+      
       或
+      
       $ python -V
       Python 3.8.3
+    
+    查看系統路徑設定
+     
+      交互模式下
+      >>> import sys
+      >>> sys.path
+
+      或終端機模式   
+      $ python -m site
       
     Windows注意
     
-    輸入`python --version`沒反應或輸入`python`開啟Microsoft Store，注意千萬不要在安裝另一個版本python，請至`設定->應用程式->應用程式執行別名`，將python相關的部分關閉
+    輸入`python --version`沒反應或輸入`python`開啟Microsoft Store詢問是否透過此安裝python，注意千萬不要再安裝另一個版本python，請至`設定->應用程式->應用程式執行別名`，將python相關的部分關閉
 
     ![](https://i.imgur.com/toRxZ8o.jpg =300x300)
 
@@ -144,6 +155,8 @@ Mac預設pip路徑在：
 一般安裝
     
     $ pip install 套件名稱
+    或
+    $ python -m pip install 套件名稱
 
 使用 requirements.txt 安裝
 
@@ -179,7 +192,7 @@ Mac預設套件安裝在：
 pip常用指令
 
     套件安裝
-    $ pip install 
+    $ pip install 套件名稱
     
     pip更新
     $ pip install --upgrade pip
@@ -237,4 +250,5 @@ Windows環境進入資料夾`\虛擬環境名稱\Scripts\`，Mac環境進入資�
     離開虛擬環境
     $ deactivate
 
+[官方參考資料](https://docs.python.org/zh-tw/3/index.html)
 
